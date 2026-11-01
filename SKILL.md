@@ -24,6 +24,7 @@ description: 撰写、修改与审查中文计算机专业硕士学位论文，�
 - **直接编写**：读取 [章节指南](references/section-guides.md)、[中文风格规则](references/style-rules.md) 和 [术语与符号表](references/thesis-terminology.md)；涉及模型或实验事实时再读 [领域与项目规范](references/domain-conventions.md)。优先交付完整正文。
 - **文字润色或压缩**：读取 [中文风格规则](references/style-rules.md) 与 [术语与符号表](references/thesis-terminology.md)；技术含义可能变化时补读 [领域与项目规范](references/domain-conventions.md)。
 - **方法与公式编写**：读取 [领域与项目规范](references/domain-conventions.md)、[术语与符号表](references/thesis-terminology.md) 和 [章节指南](references/section-guides.md)，并核对真实代码、配置与张量维度。
+- **公式输出、Word 复制或 Pandoc 转换**：读取 [术语与符号表](references/thesis-terminology.md) 中的“Markdown 与 Microsoft Word 兼容规范”。直接编写论文正文时输出可渲染的 Markdown 公式；用户明确要求“Word 可复制公式”时，另行提供不带数学分隔符和代码围栏的纯 LaTeX 源码。
 - **实验设计与结果分析**：读取 [领域与项目规范](references/domain-conventions.md)、[章节指南](references/section-guides.md) 和 [术语与符号表](references/thesis-terminology.md)，优先检查原始结果、评价协议、数据划分与基线公平性。
 - **全文或跨章节审查**：读取上述全部文件，并使用 [修订检查表](references/revision-checklist.md) 检查术语、符号、数据、模型描述、创新点和结论的证据链。
 
@@ -37,6 +38,7 @@ description: 撰写、修改与审查中文计算机专业硕士学位论文，�
 
 ## 输出边界
 
+- 论文正文默认以 Markdown 格式输出，只使用论文结构所需的标题层级、普通段落、公式、引用、必要列表和表格。正文不使用加粗、高亮、装饰性提示框、表情符号或其他视觉强调；强调关系通过论文语言和章节结构表达。
 - 不伪造引文、样本量、数据集、参数、统计检验、数值结果、模型机制或学校格式要求。
 - 不把 PCC、R²、RMSE 等统称为“准确率”；明确指标、尺度、聚合方式和比较条件。
 - 不为规避 AI 检测而制造口语、语法错误或无意义变化。
