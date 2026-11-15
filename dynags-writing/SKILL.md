@@ -13,7 +13,7 @@ description: 撰写、修改与审查中文计算机专业硕士学位论文，�
 - 区分文献结论、代码实现、实验发现与研究者推断；理论优势不能替代实验结果，模型行为不能直接解释为生物学机制。
 - 模型结构、公式、训练过程、指标和超参数以实际代码、配置及实验产物为准。读取仓库时检查执行路径，不依据文件名、类名或旧稿推断；无法访问时明确写明未核验。
 - 遗传学、育种学或生物学内容采用可靠学术来源支持。专业性强或存在不确定性的事实先查用户材料或权威学术来源，不凭常识补全。
-- 保持术语、缩写与符号稳定。新增符号先检查冲突；预测值使用 `\hat{}`，宽、深通道标识 `W`、`D` 使用下标。
+- 保持术语、缩写与符号稳定。新增符号先检查冲突；原始尺度预测使用 `\hat{y}`，标准化尺度的宽、深及融合输出分别使用 `\hat{\tilde{y}}_W`、`\hat{\tilde{y}}_D`、`\hat{\tilde{y}}`，`W`、`D` 使用下标。尺度、模块公式和统一 MSE–PCC 目标见术语与符号表。
 - 章节标题、编号、分工和写作进度以用户当前提供的正式目录及论文材料为准。同一理论或公式通常只完整介绍一次，后续章节通过引用建立联系；不为减少重复而删除影响方法复现的公式、参数及算法流程。
 - 时间查询按预设观测时间点初始化并作为可学习参数更新：统一表述为“预设观测时间点上的联合预测”，不声称模型能对任意未见时间坐标进行预测。
 - 术语要点：DC-SIS 统一为“距离相关性独立筛选（Distance Correlation Sure Independence Screening，DC-SIS）”，不得出现“确定性”；通道统一表述为“宽通道/深通道/双通道”，不得使用“通路”。
@@ -29,7 +29,7 @@ description: 撰写、修改与审查中文计算机专业硕士学位论文，�
 - **直接编写**：读取 [章节指南](references/section-guides.md)、[中文风格规则](references/style-rules.md) 和 [术语与符号表](references/thesis-terminology.md)；涉及模型或实验事实时再读 [领域与项目规范](references/domain-conventions.md)。优先交付完整正文。
 - **文字润色或压缩**：读取 [中文风格规则](references/style-rules.md) 与 [术语与符号表](references/thesis-terminology.md)；技术含义可能变化时补读 [领域与项目规范](references/domain-conventions.md)。
 - **方法与公式编写**：读取 [领域与项目规范](references/domain-conventions.md)、[术语与符号表](references/thesis-terminology.md) 和 [章节指南](references/section-guides.md)，并核对真实代码、配置与张量维度。
-- **公式输出、Word 复制或 Pandoc 转换**：读取 [术语与符号表](references/thesis-terminology.md) 中的“Markdown 与 Microsoft Word 兼容规范”。直接编写论文正文时输出可渲染的 Markdown 公式；用户明确要求“Word 可复制公式”时，另行提供不带数学分隔符和代码围栏的纯 LaTeX 源码。
+- **公式输出、GitHub 预览、Word 复制或 Pandoc 转换**：读取 [术语与符号表](references/thesis-terminology.md) 中的“Markdown、GitHub 与 Microsoft Word 兼容规范”。直接编写论文正文时输出可渲染的 Markdown 公式；用户明确要求“Word 可复制公式”时，另行提供不带数学分隔符和代码围栏的纯 LaTeX 源码。
 - **实验设计与结果分析**：读取 [领域与项目规范](references/domain-conventions.md)、[章节指南](references/section-guides.md) 和 [术语与符号表](references/thesis-terminology.md)，优先检查原始结果、评价协议、数据划分与基线公平性。
 - **大范围修改、章节重排或批量交叉引用调整**：修改前读取 [修订检查表](references/revision-checklist.md) 中的“修改前 Git 备份”；涉及章节或小节引用时，同时执行“交叉引用审查”。
 - **全文或跨章节审查**：读取上述全部文件，并使用 [修订检查表](references/revision-checklist.md) 检查术语、符号、数据、模型描述、创新点和结论的证据链。
